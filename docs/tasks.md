@@ -13,13 +13,13 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
   - Create .env.example with configuration template
   - _Requirements: 7.1, 10.1_
 
-- [ ] 2. Implement configuration management
-  - [ ] 2.1 Create configuration loader (src/config/index.js)
+- [x] 2. Implement configuration management
+  - [x] 2.1 Create configuration loader (src/config/index.js)
     - Load environment variables with defaults for optional values
     - Export typed configuration object with port, database settings, shutdown timeout
     - _Requirements: 7.1, 7.2_
   
-  - [ ] 2.2 Implement configuration logging
+  - [x] 2.2 Implement configuration logging
     - Log all configuration values at startup excluding DB_PASSWORD
     - Log warning if DB_PASSWORD is not set
     - _Requirements: 7.3, 7.4_
