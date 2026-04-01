@@ -30,13 +30,13 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - **Property 11: Configuration Logging Excludes Password**
     - **Validates: Requirements 7.1, 7.2, 7.4**
 
-- [ ] 3. Implement structured logging utility
-  - [ ] 3.1 Create logger module (src/utils/logger.js)
+- [x] 3. Implement structured logging utility
+  - [x] 3.1 Create logger module (src/utils/logger.js)
     - Implement log functions with timestamp, level (INFO, WARN, ERROR), and message
     - Format log entries consistently
     - _Requirements: 9.1_
   
-  - [ ] 3.2 Add request logging middleware
+  - [x] 3.2 Add request logging middleware
     - Log HTTP requests with method, path, status code, and response time
     - _Requirements: 1.2, 9.4_
   
