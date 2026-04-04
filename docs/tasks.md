@@ -78,8 +78,8 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
 - [x] 5. Checkpoint - Ensure database client tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Implement task validation
-  - [ ] 6.1 Create task validator (src/validators/taskValidator.js)
+- [x] 6. Implement task validation
+  - [x] 6.1 Create task validator (src/validators/taskValidator.js)
     - Implement validateTaskCreate() to check for non-empty title string
     - Implement validateTaskUpdate() to validate optional fields
     - Return validation result with errors array
