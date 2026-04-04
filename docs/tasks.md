@@ -48,7 +48,7 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - **Property 15: Log Entry Format**
     - **Validates: Requirements 9.1, 9.2, 9.3, 9.4**
 
-- [ ] 4. Implement database client with connection pooling
+- [x] 4. Implement database client with connection pooling
   - [x] 4.1 Create database client (src/db/client.js)
     - Initialize PostgreSQL connection pool with min 2, max 10 connections
     - Implement connect() method with connectivity verification
@@ -75,7 +75,7 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - **Property 17: Query Retry with Exponential Backoff**
     - **Validates: Requirements 2.4, 3.5**
 
-- [ ] 5. Checkpoint - Ensure database client tests pass
+- [x] 5. Checkpoint - Ensure database client tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 6. Implement task validation
