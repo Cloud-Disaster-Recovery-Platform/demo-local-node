@@ -92,8 +92,8 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - **Property 8: Optional Fields Use Defaults**
     - **Validates: Requirements 6.1, 6.2, 6.3, 6.4, 6.5**
 
-- [ ] 7. Implement task service layer
-  - [ ] 7.1 Create task service (src/services/taskService.js)
+- [x] 7. Implement task service layer
+  - [x] 7.1 Create task service (src/services/taskService.js)
     - Implement createTask() with UUID generation and timestamp setting
     - Implement getAllTasks() to retrieve all tasks from database
     - Implement getTaskById() to retrieve specific task
