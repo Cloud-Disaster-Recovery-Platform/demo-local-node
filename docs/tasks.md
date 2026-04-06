@@ -127,8 +127,8 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Test timeout behavior
     - _Requirements: 2.1, 2.2, 2.3, 2.4_
 
-- [ ] 9. Implement task management endpoints
-  - [ ] 9.1 Create task route handlers (src/routes/tasks.js)
+- [x] 9. Implement task management endpoints
+  - [x] 9.1 Create task route handlers (src/routes/tasks.js)
     - Implement POST /tasks with validation and task creation
     - Implement GET /tasks to retrieve all tasks
     - Implement GET /tasks/:id to retrieve specific task
@@ -147,7 +147,7 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Test error conditions (invalid JSON, missing fields, non-existent task)
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7_
 
-- [ ] 10. Checkpoint - Ensure route handler tests pass
+- [x] 10. Checkpoint - Ensure route handler tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 11. Implement Express server with graceful shutdown
