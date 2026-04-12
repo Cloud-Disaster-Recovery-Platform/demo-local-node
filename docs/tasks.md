@@ -150,8 +150,8 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
 - [x] 10. Checkpoint - Ensure route handler tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 11. Implement Express server with graceful shutdown
-  - [ ] 11.1 Create server module (src/server.js)
+- [x] 11. Implement Express server with graceful shutdown
+  - [x] 11.1 Create server module (src/server.js)
     - Initialize Express app with JSON parsing middleware
     - Register request logging middleware
     - Mount health and task routes
@@ -160,7 +160,7 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Handle port-in-use error and exit with code 1
     - _Requirements: 1.1, 1.2, 1.3, 1.4_
   
-  - [ ] 11.2 Implement graceful shutdown handling
+  - [x] 11.2 Implement graceful shutdown handling
     - Listen for SIGTERM and SIGINT signals
     - Stop accepting new connections on shutdown signal
     - Wait up to 10 seconds for in-flight requests to complete
@@ -176,8 +176,8 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - **Property 20: Shutdown Closes Database Connections**
     - **Validates: Requirements 8.1, 8.2, 8.3**
 
-- [ ] 12. Create application entry point
-  - [ ] 12.1 Create main entry point (src/index.js)
+- [x] 12. Create application entry point
+  - [x] 12.1 Create main entry point (src/index.js)
     - Load configuration and log startup values
     - Initialize database client and connect
     - Initialize schema on startup
@@ -193,11 +193,11 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Test port already in use error
     - _Requirements: 1.4, 3.3, 3.4, 5.4_
 
-- [ ] 13. Checkpoint - Ensure application starts successfully
+- [x] 13. Checkpoint - Ensure application starts successfully
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 14. Add Docker support
-  - [ ] 14.1 Create Dockerfile
+- [x] 14. Add Docker support
+  - [x] 14.1 Create Dockerfile
     - Use Node.js LTS base image
     - Copy package files and install dependencies
     - Copy application source code
@@ -205,14 +205,14 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Expose configured port
     - _Requirements: 10.1, 10.2, 10.3_
   
-  - [ ] 14.2 Create docker-compose.yml
+  - [x] 14.2 Create docker-compose.yml
     - Define PostgreSQL service with health check
     - Define application service with dependency on PostgreSQL
     - Configure environment variables for database connection
     - Ensure application waits for PostgreSQL to be ready
     - _Requirements: 10.4, 10.5_
   
-  - [ ] 14.3 Create .dockerignore
+  - [x] 14.3 Create .dockerignore
     - Exclude node_modules, .env, and test files from Docker build
     - _Requirements: 10.1_
   
@@ -223,15 +223,15 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Test application connects to PostgreSQL in Docker
     - _Requirements: 10.1, 10.4, 10.5_
 
-- [ ] 15. Create documentation and scripts
-  - [ ] 15.1 Create README.md
+- [x] 15. Create documentation and scripts
+  - [x] 15.1 Create README.md
     - Document application purpose and architecture
     - Provide setup instructions (local and Docker)
     - Document API endpoints with examples
     - Document environment variables
     - Include testing instructions
   
-  - [ ] 15.2 Add npm scripts to package.json
+  - [x] 15.2 Add npm scripts to package.json
     - Add "start" script to run application
     - Add "dev" script with nodemon for development
     - Add "test" script to run all tests
@@ -239,7 +239,7 @@ This plan implements a Node.js Express.js API with PostgreSQL database, health m
     - Add "test:property" script for property tests only
     - Add "test:integration" script for integration tests only
 
-- [ ] 16. Final checkpoint - Run all tests and verify Docker deployment
+- [x] 16. Final checkpoint - Run all tests and verify Docker deployment
   - Run all unit tests, property tests, and integration tests
   - Build Docker image and verify it runs successfully
   - Start application with docker-compose and verify health endpoint
