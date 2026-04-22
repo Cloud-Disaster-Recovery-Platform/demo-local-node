@@ -48,7 +48,6 @@ To use this application in the Cloud Recovery demo:
    ```bash
    cloudflared tunnel --url http://localhost:3000
    ```
-2. **Follow the Walkthrough**: For full instructions on the "Local-to-Cloud" failover demo, please refer to the [Root README](../README.md).
 
 ## Environment variables
 
