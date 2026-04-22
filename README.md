@@ -40,6 +40,16 @@ docker compose up --build
 
 The app is exposed on `http://localhost:3000`.
 
+## Cloud Recovery Demo
+
+To use this application in the Cloud Recovery demo:
+
+1. **Expose locally**: Start a Cloudflare tunnel to make this app public:
+   ```bash
+   cloudflared tunnel --url http://localhost:3000
+   ```
+2. **Follow the Walkthrough**: For full instructions on the "Local-to-Cloud" failover demo, please refer to the [Root README](../README.md).
+
 ## Environment variables
 
 | Variable | Default | Description |
